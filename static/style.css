@@ -1,0 +1,85 @@
+/* Menghilangkan blur pada background halaman */
+body {
+    background-image: url("bg.png");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Section utama dengan efek glassmorphism */
+  .hero-section {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 60px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Input group dengan efek glassmorphism dan stroke lebih tebal */
+  .glass-input {
+    background: rgba(255, 255, 255, 0.7); /* Opasitas lebih tinggi */
+    border: 3px solid rgba(255, 255, 255, 0.1); /* Border lebih tebal */
+    backdrop-filter: blur(15px); /* Blur lebih intens */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih kuat */
+    
+}
+  
+  .glass-input .form-control {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+  
+/* Warna placeholder lebih gelap */
+.glass-input .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.8);
+}
+  
+  /* Button yang menyatu dengan input field */
+  .custom-btn {
+    background-color: #007BFF; /* Warna biru */
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 15px; /* Membuat sudut rounded */
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: #0069d9;
+  }
+  
+  
+  /* Card hasil prediksi */
+  .card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* (Divider sudah dihapus sesuai permintaan) */
+  
